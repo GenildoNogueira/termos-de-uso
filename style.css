@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-main: #fefefe;
+    --background-secondary: #cccccc;
+    --color-main: #333333;
+    --color-secondary: #555555;
+}
+
+.dark {
+    --background-main: #333333;
+    --background-secondary: #555555;
+    --color-main: #fefefe;
+    --color-secondary: #cccccc;
+}
+
+@media (prefers-color-scheme: dark) {
+    .system {
+        --background-main: #333333;
+        --background-secondary: #555555;
+        --color-main: #fefefe;
+        --color-secondary: #cccccc;
+    }
+}
+
+.title {
+    font-size: 3rem;
+    color: var(--color-main);
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: var(--color-secondary);
+}
